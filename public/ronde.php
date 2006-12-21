@@ -15,11 +15,11 @@
 			}
 		</script>
 		<style type="text/css">
-			
+
 			html {
 				font-size: 85%;
 			}
-			
+
 			body {
 				margin: 20px 0 0 0; padding: 0;
 				font-family:  helvetica, verdana, "Lucida Grande", arial,  sans-serif;
@@ -32,15 +32,15 @@
 			strong {
 				background-color: #ffc;
 			}
-			
+
 			h1 {
 				font-size: 1.5em;
 			}
-			
+
 			h2 {
 				font-size: 1.2em;
 			}
-			
+
 			div#container {
 				margin: 2em auto;
 				text-align: left;
@@ -48,57 +48,57 @@
 				background: white;
 				padding: 2em;
 			}
-			
-			
+
+
 			div.hojskole {
 				width: 27%;
 				float: left;
 				margin-right: 2%;
 				padding: 1em;
 			}
-			
+
 			div.hojskole h2 {
 				margin-bottom: 0;
 				padding: 0.5em;
 				font-size: 1em;
 			}
-			
+
 			div.hojskole a {
 				text-decoration: none;
 			}
-			
-			
+
+
 			div.hojskole a:hover {
 				text-decoration: underline;
 			}
-			
+
 			div.hojskole ul {
 				margin: 0;
 				padding: 1em 1.5em;
 			}
-			
+
 			div.hojskole li {
 				margin: 0;
 				padding: 0;
 				list-style: square;
 			}
-			
+
 			div.hojskole p {
 				margin: 0;
 				padding: 0.5em 1em 2em 0.5em;
 				text-align: right;
 				font-size: 0.9em;
 			}
-			
+
 			div#vih h2, div#vih h2 a {
 				background: #D61031;
 				color: white;
 			}
-			
+
 			div#vih ul, div#vih p {
 				background: #F9B9C3;
 			}
-			
+
 			div#egaa h2, div#egaa h2 a {
 				background: #76AADB;
 				color: black;
@@ -108,28 +108,28 @@
 				background: #A5C7E7;
 				color: black;
 			}
-			
+
 			div#ronde h2, div#ronde h2 a {
 				background: #bbb;
 				color: black;
 			}
-			
+
 			div#ronde ul, div#ronde p {
 				background: #ddd;
 				color: black;
 			}
 
-			
+
 		</style>
 
-		
+
 	</head>
-	
+
 	<body>
-	
+
 		<div id="container">
-		
-		
+
+
 <h1>Ind på studiet? Bedre eksamen? Få et forspring på Rønde Højskoles SommerCamp!</h1>
 
 <h2>1.-21. juli 2007</h2>
@@ -158,10 +158,10 @@
 
 <p>Pris for SommerCamp: I alt 4.500 kroner.</p>
 
-<p>Hvis du har en anden etnisk baggrund end dansk, udløser det et stipendium fra regeringens satspulje . Det betyder, at prisen for kurset bliver 500 kroner pr. uge – i alt 1500 kroner.</p>
+<p>Hvis du har en anden etnisk baggrund end dansk, udløser det et stipendium fra regeringens satspulje . Det betyder, at prisen for kurset bliver i alt 500 kroner.</p>
 
-		
+
 		</div>
 	</body>
-	
+
 </html>

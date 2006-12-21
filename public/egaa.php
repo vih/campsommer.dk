@@ -137,7 +137,7 @@
 			<p>I de tre uger du er på højskolen lever og bor du sammen med en gruppe jævnaldrende unge. Planen er, at du får en lang række nye venner fra hele landet.</p>
 			<p>Det bliver en sommerferie du aldrig glemmer og så er du helt sikkert helt klar til det efterfølgende.</p>
 
-			<p>Vi prøver at holde prisen meget lav, nemlig 500 kr for 3 uger. Hvis du er ung med anden etnisk baggrund end dansk udløser du et tilskud der gør, at du selv kun skal betale 500 kr. pr. uge.</p>
+			<p>Vi prøver at holde prisen meget lav, nemlig 4.500 kr for 3 uger. Hvis du er ung med anden etnisk baggrund end dansk udløser du et tilskud der gør, at du selv kun skal betale 500 kr for hele kurset.</p>
 
 			<p>Fra 1. december kan du se meget mere om sommercamp Egå på <a href="http://www.euh.dk/">www.euh.dk</a>.</p>
 
