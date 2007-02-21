@@ -4,10 +4,10 @@ require 'include_first.php';
 $tpl = new Template(PATH_TEMPLATE);
 $tpl->set('title', 'Rønde Højskole - få et forspring på Rønde Højskoles SommerCamp');
 $tpl->set('meta', array('description' => '', 'keywords' => ''));
-
+$tpl->set('body_attributes', 'class="sidebar"');
 $tpl->set('content_main', '
-
-<h1>Ind på studiet? Bedre eksamen? Få et forspring på Rønde Højskoles SommerCamp!</h1>
+<h1>SommerCamp Rønde</h1>
+<h2>Ind på studiet? Bedre eksamen? Få et forspring på Rønde Højskoles SommerCamp!</h2>
 
 <h2>1.-21. juli 2007</h2>
 
@@ -33,9 +33,11 @@ $tpl->set('content_main', '
 
 <p>Indkvartering er på dobbeltværelse med bad og toilet på gangen. Der er trådløst internet på alle værelser.</p>
 
+<h2>Pris</h2>
 <p>Pris for SommerCamp: I alt 4.500 kroner.</p>
-
-<p>Hvis du har en anden etnisk baggrund end dansk, udløser det et stipendium fra regeringens satspulje . Det betyder, at prisen for kurset bliver i alt 500 kroner.</p>
+<p>Hvis du har en anden etnisk baggrund end dansk, udløser det et stipendium fra regeringens satspulje. Det betyder, at prisen for kurset bliver i alt 500 kroner.</p>
 ');
+
+$tpl->set('content_sub', '<h2>Læs mere</h2><p><a href="http://www.rhe.dk/hojskole/">www.rhe.dk</a></p>');
 echo $tpl->fetch('main-tpl.php');
 ?>

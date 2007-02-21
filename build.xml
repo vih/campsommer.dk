@@ -1,56 +1,21 @@
-<project name="Campsommer.dk" basedir=".">
+<project name="Campsommer.dk" basedir="." default="upload">
     <description>
         This build file deploys campsommer.dk
     </description>
 
-	<!-- settings -->
-	<property name="svnant.dir" value="C:\Program Files\eclipse\plugins\svnant-1.1.0-rc1\lib\"/>
-	<property name="ftp.server" value="olive.dreamhost.com"/>
-	<property name="ftp.user" value="retlet"/>
-	<property name="ftp.password" value="klaniklani"/>
-	<property name="local.directory" value="./public/"/>
-	<property name="ftp.remote.directory" value="./campsommer.dk/"/>
+	<property file="${basedir}/project.properties"/>
 
-	<property name="checkout.dir" value="c:\checkout"/>
-	<property name="project.name" value="campsommer.dk"/>
-
-	<property name="subversion.repos.url" value="http://svn.intraface.dk/campsommer/trunk/"/>
-	<property name="subversion.username" value="lsolesen"/>
-	<property name="subversion.password" value="klani"/>
-
-	<path id="svnant.classpath">
-		<fileset dir="${svnant.dir}">
-			<include name="*.jar" />
-		</fileset>
-	</path>
-	<typedef resource="org/tigris/subversion/svnant/svnantlib.xml" classpathref="svnant.classpath" />
 	<taskdef name="ftp" classname="org.apache.tools.ant.taskdefs.optional.net.FTP"/>
 
-
-	<target name="svnExport">
-		<delete dir="${checkout.dir}\${project.name}"/>
-
-		<svn javahl="${javahl}" username="${subversion.user}" password="${subversion.password}">
-			<export srcurl="${subversion.repos.url}" destPath="${checkout.dir}\${project.name}" />
-		</svn>
-	</target>
-
-	<!-- run tests -->
-
-	<!-- uploads files to server -->
 	<target name="upload" description="Upload files" >
 		<ftp verbose="yes" passive="no" depends="yes"
 			remotedir="${ftp.remote.directory}" server="${ftp.server}"
 			userid="${ftp.user}" password="${ftp.password}">
-			<fileset dir="${local.directory}" />
+			<fileset dir="${local.directory}">
+				<exclude name="config.local.php"/>
+			</fileset>
+
 		</ftp>
 	</target>
-
-
-
-	<!-- create setting files -->
-
-	<!-- delete unneccessary stuff -->
-
 
 </project>

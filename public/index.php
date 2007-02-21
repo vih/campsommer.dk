@@ -3,16 +3,14 @@ require 'include_first.php';
 
 $tpl = new Template(PATH_TEMPLATE);
 $tpl->set('title', 'Sommercamp – tre uger på højskole');
-$tpl->set('meta', array('description' => '', 'keywords' => ''));
+$tpl->set('meta', array('description' => 'På tre ugers sommercamp kan du forberede og kvalificere dig til studiet.', 'keywords' => 'sommercamp'));
 
 $tpl->set('content_main', '
-		 	<img src="campsommer.jpg?dfdfd" width="700" heigh="260" alt="" />
+			<h1>Sommercamp – tre fede uger på højskole</h1>
 
-			<h1>Sommercamp – tre uger på højskole</h1>
+			<p>Her er chancen for at få tre fede uger på højskole, hvor du både får faglige udfordringer, nyt netværk og en masse oplevelser. Sommercamp er en ny måde at være på højskole på. Det er intenst. Det er hårdt arbejde. Men det er først og fremmest sjovt!</p>
 
-			<p></p>Her er chancen for at få tre fede uger på højskole, hvor du både får faglige udfordringer, nyt netværk og en masse oplevelser. Sommercamp er en ny måde at være på højskole på. Det er intenst. Det er hårdt arbejde. Men det er først og fremmest sjovt!</p>
-
-			<p>Brug tre uger på at <strong>udvikle dig</strong>, <strong>forberede dig</strong> og <strong>kvalificere dig</strong>. Til studiet og til livet.</p>
+			<p>Brug tre uger på at <strong>udvikle dig</strong>, <strong>forberede dig</strong> og <strong>kvalificere dig</strong>. Til studiet og til livet - og hvis du har anden etnisk baggrund end dansk, koster det <strong>kun 500 kroner</strong></p>
 
 			<h2>Her kan du tage på Sommercamp</h2>
 
@@ -25,7 +23,7 @@ $tpl->set('content_main', '
 					<li>Historie</li>
 					<li>Samfundsfag og religionsmøde</li>
 				</ul>
-				<p><a href="ronde.php">Mere om Sommercamp Rønde</a></p>
+				<p><a href="ronde.php">Læs om Sommercamp Rønde</a></p>
 			</div>
 
 			<div class="hojskole" id="egaa">
@@ -37,7 +35,7 @@ $tpl->set('content_main', '
 					<li>Design</li>
 					<li>Idræt</li>
 				</ul>
-				<p><a href="egaa.php">Mere om Sommercamp Egå</a></p>
+				<p><a href="egaa.php">Læs om Sommercamp Egå</a></p>
 			</div>
 
 			<div class="hojskole" id="vih">
@@ -48,11 +46,20 @@ $tpl->set('content_main', '
 					<li>Samfundsfag og historie</li>
 					<li>Idræt</li>
 				</ul>
-				<p><a href="http://www.vih.dk/kortekurser/219/">Mere om Sommercamp Vejle</a></p>
+				<p><a href="vih.php">Læs om Sommercamp Vejle</a></p>
 
 			</div>
 
 			<br style="clear: both;" />
+
+			<h2>Hvem er sommercamp for?</h2>
+			<ul>
+				<li>Alle der er fyldt 16½ ved kursets start (optagelseskrav)</li>
+				<li>Unge der vil forbedre faglige kompetencer især i dansk og matematik.</li>
+				<li>Unge der har brug for at kunne formidle, fx ved eksaminer (kommunikation)</li>
+				<li>Unge der vil have et overskud i den kommende ungdomsuddannelse</li>
+				<li>Unge der skal til sygeeksamen</li>
+			</ul>
 
 			<h2>Tilmeld dig</h2>
 
