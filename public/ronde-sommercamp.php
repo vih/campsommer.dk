@@ -3,7 +3,7 @@ require 'include_first.php';
 
 $tpl = new Template(PATH_TEMPLATE);
 $tpl->set('title', 'Rønde Højskole - få et forspring på Rønde Højskoles SommerCamp');
-$tpl->set('meta', array('description' => '', 'keywords' => ''));
+$tpl->set('meta', array('description' => 'Få et forspring på Rønde Højskoles sommerCamp', 'keywords' => 'sommercamp, højskole'));
 $tpl->set('body_attributes', 'class="sidebar"');
 $tpl->set('content_main', '
 <h1>SommerCamp Rønde</h1>

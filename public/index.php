@@ -3,7 +3,9 @@ require 'include_first.php';
 
 $tpl = new Template(PATH_TEMPLATE);
 $tpl->set('title', 'Sommercamp – tre uger på højskole');
-$tpl->set('meta', array('description' => 'På tre ugers sommercamp kan du forberede og kvalificere dig til studiet.', 'keywords' => 'sommercamp'));
+$tpl->set('meta', array(
+	'description' => 'På tre ugers sommercamp kan du forberede og kvalificere dig til studiet.',
+	'keywords' => 'sommercamp, højskole'));
 
 $tpl->set('content_main', '
 			<h1>Sommercamp – tre fede uger på højskole</h1>
@@ -12,7 +14,7 @@ $tpl->set('content_main', '
 
 			<p>Brug tre uger på at <strong>udvikle dig</strong>, <strong>forberede dig</strong> og <strong>kvalificere dig</strong>. Til studiet og til livet - og hvis du har anden etnisk baggrund end dansk, koster det <strong>kun 500 kroner</strong></p>
 
-			<h2>Her kan du tage på Sommercamp</h2>
+			<h2>Her kan du tage på sommercamp</h2>
 
 			<div class="hojskole" id="ronde">
 				<h2><a href="http://www.rhe.dk/hojskole/">Rønde Højskole</a></h2>

@@ -3,7 +3,7 @@ require 'include_first.php';
 
 $tpl = new Template(PATH_TEMPLATE);
 $tpl->set('title', 'Egå Højskole - Bliv klar til en ungdomsuddannelse');
-$tpl->set('meta', array('description' => '', 'keywords' => ''));
+$tpl->set('meta', array('description' => 'Sommercamp: Tre forrygende højskoleuger sammen med andre unge inden du starter på en uddannelse.', 'keywords' => 'sommercamp, højskole'));
 $tpl->set('body_attributes', 'class="sidebar"');
 
 $tpl->set('content_main', '

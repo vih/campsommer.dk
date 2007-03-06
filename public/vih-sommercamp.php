@@ -2,8 +2,8 @@
 require 'include_first.php';
 
 $tpl = new Template(PATH_TEMPLATE);
-$tpl->set('title', 'Rønde Højskole - få et forspring på Rønde Højskoles SommerCamp');
-$tpl->set('meta', array('description' => '', 'keywords' => ''));
+$tpl->set('title', 'Vejle Idrætshøjskoles sommercamp - højskole og udvikling');
+$tpl->set('meta', array('description' => 'På Vejle Idrætshøjskoles sommercamp kan du på sommerhøjskole forbedre dine skolekundskaber', 'keywords' => 'sommercamp, højskole'));
 $tpl->set('body_attributes', 'class="sidebar"');
 
 $tpl->set('content_main', '
@@ -44,6 +44,6 @@ Du skulle gerne efter 3 uger på Vejle Idrætshøjskole have dannet dig et overblik
 <p>4500 kroner for alle tre uger. Er du ung med anden etnisk baggrund end dansk koster kurset kun kr. 500, fordi du er berettiget til støtte fra statens satspulje.</p>
 ');
 
-$tpl->set('content_sub', '<h2>Læs mere</h2><p><a href="http://www.vih.dk/kortekurser/219/">www.vih.dk</a></p>');
+$tpl->set('content_sub', '<h2>Læs mere</h2><p><a href="http://www.vih.dk/kortekurser/219/">Sommercamp Vejle</a></p>');
 echo $tpl->fetch('main-tpl.php');
 ?>
