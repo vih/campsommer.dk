@@ -1,17 +1,17 @@
 <?php
 $navigation = array(
   PATH_WWW => 'Sommercamp',
-  PATH_WWW . 'egaa.php' => 'Egå Højskole',
-  PATH_WWW . 'vih.php' => 'Vejle Idrætshøjskole',
-  PATH_WWW . 'ronde.php' => 'Rønde Højskole',
+  PATH_WWW . 'egaa-sommercamp.php' => 'Egå Højskole',
+  PATH_WWW . 'vih-sommercamp.php' => 'Vejle Idrætshøjskole',
+  PATH_WWW . 'ronde-sommercamp.php' => 'Rønde Højskole',
   PATH_WWW . 'faq.php' => 'FAQ'
 );
 
 $pics = array(
-	PATH_WWW . 'images/horisontal-boldspil.jpg',
-	PATH_WWW . 'images/horisontal-studiegruppe.jpg',
-	PATH_WWW . 'campsommer.jpg',
-	PATH_WWW . 'images/horisontal-jumping.jpg',
+	PATH_WWW . 'images/horisontal-boldspil-logo.jpg',
+	PATH_WWW . 'images/horisontal-studiegruppe-logo.jpg',
+	PATH_WWW . 'images/horisontal-klatrer-logo.jpg',
+	PATH_WWW . 'images/horisontal-jumping-logo.jpg',
 );
 
 $pic = $pics[array_rand($pics)];
@@ -233,6 +233,8 @@ padding: 20px 0;
         border: none;
       }
 
+      #footer { clear: both; text-align: right; }
+
       @media print {
       	#navigation-main { display: none; }
       	div#branding { display: block; }
@@ -268,7 +270,10 @@ padding: 20px 0;
       </div>
       <div id="content-sub">
       	<?php echo $content_sub; ?>
+      </div>
 
+      <div id="footer">
+      	<a href="http://www.hojskolerne.dk/"><img src="images/hojskolerne-logo.jpg" height="30" width="100" /></a>
       </div>
 
     </div>
