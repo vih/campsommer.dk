@@ -25,7 +25,7 @@ $tpl->set('content_main', '
 					<li>Historie</li>
 					<li>Samfundsfag og religionsmøde</li>
 				</ul>
-				<p><a href="ronde.php">Læs om Sommercamp Rønde</a></p>
+				<p><a href="ronde-sommercamp.php">Læs om Sommercamp Rønde</a></p>
 			</div>
 
 			<div class="hojskole" id="egaa">
@@ -37,7 +37,7 @@ $tpl->set('content_main', '
 					<li>Design</li>
 					<li>Idræt</li>
 				</ul>
-				<p><a href="egaa.php">Læs om Sommercamp Egå</a></p>
+				<p><a href="egaa-sommercamp.php">Læs om Sommercamp Egå</a></p>
 			</div>
 
 			<div class="hojskole" id="vih">
@@ -48,7 +48,7 @@ $tpl->set('content_main', '
 					<li>Samfundsfag og historie</li>
 					<li>Idræt</li>
 				</ul>
-				<p><a href="vih.php">Læs om Sommercamp Vejle</a></p>
+				<p><a href="vih-sommercamp.php">Læs om Sommercamp Vejle</a></p>
 
 			</div>
 
