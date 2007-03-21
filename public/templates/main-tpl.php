@@ -273,7 +273,7 @@ padding: 20px 0;
       </div>
 
       <div id="footer">
-      	<a href="http://www.hojskolerne.dk/"><img src="images/hojskolerne-logo.jpg" height="30" width="100" /></a>
+      	<a href="http://www.hojskolerne.dk/"><img alt="hojskolerne.dk" src="images/hojskolerne-logo.jpg" height="30" width="100" /></a>
       </div>
 
     </div>

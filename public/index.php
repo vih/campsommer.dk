@@ -66,6 +66,10 @@ $tpl->set('content_main', '
 			<h2>Tilmeld dig</h2>
 
 			<p>Du kan tilmelde dig ved at udfylde <a href="tilmeldingsommercamp2007.pdf">tilmeldingsblanketten (pdf)</a> og sende den til den højskole, du gerne vil på.</p>
+
+			<h2>Læs mere</h2>
+
+			<p>Vi har lavet en brochure, som er delt op i <a href="'. rawurlencode('Pjece3xhojskole-forbag-72dpi 2.pdf').'">den ene side</a> og <a href="'. rawurlencode('Pjece3xhojskole-inder-72dpi 2.pdf').'">den anden side</a>. Tjek også vores <a href="faq.php">ofte stillede spørgsmål</a>, hvor du bl.a. kan få at vide, hvem der kun skal betale <strong>500 kroner</strong> for tre fede uger på højskole.</p>
 ');
 
 echo $tpl->fetch('main-tpl.php');
