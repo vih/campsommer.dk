@@ -4,7 +4,7 @@ require 'include_first.php';
 $tpl = new Template(PATH_TEMPLATE);
 $tpl->set('title', 'Sommercamp – tre uger på højskole');
 $tpl->set('meta', array(
-	'description' => 'På tre ugers sommercamp kan du forberede og kvalificere dig til studiet.',
+	'description' => 'På tre ugers sommercamp kan du forberede og kvalificere dig til studiet. Sommercamp koster kun 500 kroner for indvandrere.',
 	'keywords' => 'sommercamp, højskole'));
 
 $tpl->set('content_main', '
@@ -56,7 +56,7 @@ $tpl->set('content_main', '
 
 			<h2>Hvem er sommercamp for?</h2>
 			<ul>
-				<li>Alle der er fyldt 16½ ved kursets start (optagelseskrav)</li>
+				<li>Alle der er fyldt 17½ i Vejle og Rønde og 16½ i Egaa ved kursets start kan optages</li>
 				<li>Unge der vil forbedre faglige kompetencer især i dansk og matematik.</li>
 				<li>Unge der har brug for at kunne formidle, fx ved eksaminer (kommunikation)</li>
 				<li>Unge der vil have et overskud i den kommende ungdomsuddannelse</li>
@@ -65,7 +65,7 @@ $tpl->set('content_main', '
 
 			<h2>Tilmeld dig</h2>
 
-			<p>Du kan tilmelde dig ved at udfylde <a href="tilmeldingsommercamp2007.pdf">tilmeldingsblanketten (pdf)</a> og sende den til den højskole, du gerne vil på.</p>
+			<p>Du kan tilmelde dig sommercamp ved at udfylde <a href="tilmeldingsommercamp2007.pdf">tilmeldingsblanketten (pdf)</a> og sende den til den højskole, du gerne vil på.</p>
 
 			<h2>Læs mere</h2>
 
