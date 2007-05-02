@@ -11,13 +11,17 @@ $tpl->set('content_main', '
 
 <h2>1.-21. juli 2007</h2>
 
-<p>På SommerCamp Rønde har du chancen for at forberede dig og forbedre dig. Hvis du har tre uger, så har vi programmet, der giver dig de bedste odds, når du skal begynde på studiet eller forbedre dine resultater i den uddannelse, du er i gang med allerede.</p>
+<p><strong>På SommerCamp Rønde har du chancen for at forberede dig og forbedre dig.</strong></p>
+
+<p>Hvis du har tre uger, så har vi programmet, der giver dig de bedste odds, når du skal begynde på studiet eller forbedre dine resultater i den uddannelse, du er i gang med allerede.</p>
 
 <p>Men vi har også plads til dig, hvis du bare ønsker at klare dig lidt bedre dér, hvor du er – samtidig med at du får tre skønne uger med masser af højskoleliv, fællesskab og oplevelser.</p>
 
-<p><strong>Studie-engelsk</strong>. På mange uddannelser, for eksempel medicin, skal du kunne læse svære, tekniske bøger på engelsk, og det vil ofte blive forventet af dig, at du kan begå dig på dette vigtige sprog. På SommerCamp vil du blive trænet i engelsk på højt niveau, både som talesprog og som redskab til studiet.</p>
+<p><strong>Dansk</strong>. Undervisning der tager udgangspunkt i dit niveau og behov.</p>
 
-<p><strong>Kemi</strong>. Få et vigtigt forspring i kemi og biokemi, når SommerCamps dygtige undervisere tager fat i dig dér, hvor du er, og sørger for, at du bliver dygtigere.</p>
+<p><strong>Engelsk</strong>. På mange uddannelser, for eksempel medicin, skal du kunne læse svære, tekniske bøger på engelsk, og det vil ofte blive forventet af dig, at du kan begå dig på dette vigtige sprog. På SommerCamp vil du blive trænet i engelsk på højt niveau, både som talesprog og som redskab til studiet.</p>
+
+<p><strong>Matematik</strong>. Her arbejder vi med den grundlæggende forståelse for matematikkens gåder. Du vil blive mødt dér, hvor du er.</p>
 
 <p><strong>Kommunikation – eksamensforberedelse</strong>. Få bugt med eksamensskrækken og grib mulighed for at lave en bedre præstation, når du skal til mundtlig eksamen. Her vil en uddannet psykolog hjælpe dig med helt konkrete teknikker.</p>
 
@@ -25,11 +29,17 @@ $tpl->set('content_main', '
 
 <p><strong>Samfundsfag og religionsmøde</strong>. Vi skal diskutere det samfundsfaglige og det religiøse i dette fag, der både giver plads til undervisning og masser af diskussion. Her skal vi lære noget nyt om dem, der mener noget andet om os – for hvad er det egentlig, de mener?</p>
 
-<p>Ud over disse fag byder SommerCamp Rønde på idræt, friluftsliv med kajak og kano, bål, sang og en masse herligt højskoleliv. Du vil få en masse ny viden, oplevelser og et stort netværk. Der er foredrag med blandt andet Georg Metz og Johannes Møllehave.</p>
+<p>Ud over disse fag byder SommerCamp Rønde på <strong>idræt</strong>, <strong>friluftsliv med kajak og kano</strong>, <strong>bål</strong>, <strong>sang</strong> og en masse herligt højskoleliv. Du vil få en masse ny viden, oplevelser og et stort netværk. Der er foredrag med blandt andet Georg Metz og Johannes Møllehave.</p>
+
+<p>Der er foredrag med blandt andre <strong>Georg Metz</strong> og <strong>Johannes Møllehave</strong>.</p>
 
 <p>Vi afholder ikke eksamen, men sørger for, at du kan få ro til at fordybe dig, lære noget og udvikle dig samtidig med, at du kan smage på højskolelivet.</p>
 
+<h2>Beliggenhed</h2>
+
 <p>Rønde Højskole ligger på Djursland, cirka en halv times kørsel fra Århus. Der er gode busforbindelser til Århus og Sjælland – blandt andet kører linje 888 fra Valby Station til Rønde. Højskolen ligger i et smukt område tæt på skov og strand.</p>
+
+<h2>Indkvartering</h2>
 
 <p>Indkvartering er på dobbeltværelse med bad og toilet på gangen. Der er trådløst internet på alle værelser.</p>
 
