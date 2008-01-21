@@ -17,8 +17,6 @@ class Campsommer_Controller_Vih extends k_Controller
 <h1>SommerCamp Vejle, uge 27, 28 og 29, 2008</h1>
 <p><strong>3 ugers sommerhøjskole for unge, der vil forbedre deres skolekundskaber og dyrke en masse idræt.</strong></p>
 <p>Mangler du færdigheder i almindelige skolefag, som dansk, matematik, samfundsfag og historie, er dette kurset for dig. Hvis du samtidig er interesseret i idræt, eller bare vil i bedre fysisk form er der alle muligheder for at opleve 3 uforglemmelige uger sammen med andre unge. </p>
-<p>At gå på højskole er noget helt specielt dansk. Du bor, spiser og får undervisning på skolen. Skolens lærere er engagerede mennesker, som interesserer sig for hver enkel elev. Du vil opleve et helt specielt samvær og fællesskab, som man ellers kun finder i familien eller blandt nære venner.</p>
-<p>Du kan være ung med anden etnisk baggrund end dansk eller af dansk oprindelse. Du vil få et intensivt kursus i fagene, så du bedre kan starte eller fortsætte i uddannelses-systemet.</p>
 <h2>Beskrivelse af fagområderne:</h2>
 <ul>
 <li>Dansk: Du skal arbejde med stavning og grammatik. Gennem øvelser og opgaver bliver din evne til at kommunikere både skriftligt og mundtligt forbedret.</li>

@@ -1,21 +1,79 @@
-<project name="Campsommer.dk" basedir="." default="upload">
-    <description>
-        This build file deploys campsommer.dk
-    </description>
+<?xml version="1.0" ?>
+<project name="campsommer" basedir="./" default="make">
+    <property file="./build.properties" />
+    <taskdef classname="phing.tasks.ext.d51PearPkg2Task" name="d51pearpkg2" />
+    <taskdef classname="phing.tasks.ext.FtpDeploy" name="ftpdeploy" />
 
-	<property file="${basedir}/project.properties"/>
+    <property name="package-name" value="campsommer" />
+    <property name="version" value="1.0.0" />
+    <property name="stability" value="stable" />
+    <property name="build.dir" value="./build/" />
+    <property name="source.dir" value="./src/" />
 
-	<taskdef name="ftp" classname="org.apache.tools.ant.taskdefs.optional.net.FTP"/>
+    <target name="export">
+        <echo msg="Exporting SVN files" />
+        <delete dir="./build" />
+        <exec command="svn export ${source.dir} ${build.dir}" />
+    </target>
 
-	<target name="upload" description="Upload files" >
-		<ftp verbose="yes" passive="no" depends="yes"
-			remotedir="${ftp.remote.directory}" server="${ftp.server}"
-			userid="${ftp.user}" password="${ftp.password}">
-			<fileset dir="${local.directory}">
-				<exclude name="config.local.php"/>
-			</fileset>
+    <target name="build" depends="export">
+        <d51pearpkg2 dir="${build.dir}" baseinstalldir="/">
+            <name>${package-name}</name>
+            <summary>Campsommer</summary>
+            <channel>public.intraface.dk</channel>
+            <description>
+                <!--        Don't exceed this width         -->
+                Campsommer
+            </description>
 
-		</ftp>
-	</target>
+            <lead user="lsolesen" name="Lars Olesen" email="lars@legestue.net" />
+            <license>LGPL</license>
+
+            <version release="${version}" api="${version}" />
+            <stability release="${stability}" api="${stability}" />
+
+            <dependencies>
+                <php minimum_version="5.2.0" />
+
+                <pear minimum_version="1.6.0"
+                      recommended_version="1.6.1" />
+
+                <package name="konstrukt"
+                         channel="public.intraface.dk"
+                         recommended_version="0.1.0"
+                         minimum_version="0.1.0" />
+
+            </dependencies>
+
+            <changelog version="0.1.0" date="2008-01-12" license="LGPL">
+                First version as a PEAR package
+            </changelog>
+            <notes>
+                * none
+            </notes>
+        </d51pearpkg2>
+    </target>
+
+    <target name="make" depends="build">
+        <echo msg="Creating PEAR archive file for ${package-name}" />
+        <mkdir dir="${build.dir}${package-name}-${version}" />
+        <copy todir="${build.dir}${package-name}-${version}">
+            <fileset dir="${build.dir}">
+                <include name="**" />
+            </fileset>
+        </copy>
+        <delete file="${package-name}-${version}.tgz" />
+        <tar compression="gzip" destfile="${package-name}-${version}.tgz" basedir="${build.dir}" />
+    </target>
+
+
+    <target name="deploy" depends="make">
+        <echo msg="Deploying package" />
+        <ftpdeploy host="${ftp.server}" port="21" username="${ftp.user}" password="${ftp.password}" dir="./" clearfirst="false">
+            <fileset dir="./">
+                <include name="${package-filename}" />
+            </fileset>
+        </ftpdeploy>
+    </target>
 
 </project>
