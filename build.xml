@@ -5,14 +5,14 @@
     <taskdef classname="phing.tasks.ext.FtpDeploy" name="ftpdeploy" />
 
     <property name="package-name" value="campsommer" />
-    <property name="version" value="1.0.0" />
+    <property name="version" value="1.0.2" />
     <property name="stability" value="stable" />
     <property name="build.dir" value="./build/" />
     <property name="source.dir" value="./src/" />
 
     <target name="export">
         <echo msg="Exporting SVN files" />
-        <delete dir="./build" />
+        <delete dir="${build.dir}" />
         <exec command="svn export ${source.dir} ${build.dir}" />
     </target>
 
@@ -32,6 +32,12 @@
             <version release="${version}" api="${version}" />
             <stability release="${stability}" api="${stability}" />
 
+            <dirroles key="www">web</dirroles>
+
+            <release>
+                <install as="index.php" name="www/index.php" />
+            </release>
+
             <dependencies>
                 <php minimum_version="5.2.0" />
 
@@ -40,16 +46,20 @@
 
                 <package name="konstrukt"
                          channel="public.intraface.dk"
-                         recommended_version="0.1.0"
-                         minimum_version="0.1.0" />
-
+                         recommended_version="0.4.0"
+                         minimum_version="0.4.0" />
             </dependencies>
 
-            <changelog version="0.1.0" date="2008-01-12" license="LGPL">
-                First version as a PEAR package
+            <changelog version="1.0.0" date="2008-01-12" license="LGPL">
+                * First version as a PEAR package
             </changelog>
+
+            <changelog version="1.0.1" date="2008-01-20" license="LGPL">
+                * Fixed dirroles
+            </changelog>
+
             <notes>
-                * none
+                * Fixed price to VIH
             </notes>
         </d51pearpkg2>
     </target>
@@ -60,6 +70,7 @@
         <copy todir="${build.dir}${package-name}-${version}">
             <fileset dir="${build.dir}">
                 <include name="**" />
+                <exclude name="config.local.php" />
             </fileset>
         </copy>
         <delete file="${package-name}-${version}.tgz" />
@@ -69,7 +80,7 @@
 
     <target name="deploy" depends="make">
         <echo msg="Deploying package" />
-        <ftpdeploy host="${ftp.server}" port="21" username="${ftp.user}" password="${ftp.password}" dir="./" clearfirst="false">
+        <ftpdeploy host="${ftp.server}" username="${ftp.user}" password="${ftp.password}" port="21" dir="./" mode="binary" clearfirst="false">
             <fileset dir="./">
                 <include name="${package-filename}" />
             </fileset>
