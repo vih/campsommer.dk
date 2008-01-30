@@ -4,7 +4,7 @@
 
             <h2>Tre uger - 500 kroner!</h2>
 
-            <p>SommerCamp er målrettet unge med anden etnisk baggrund end dansk og er støttet af Integrationsministeriet. Det betyder, at du kun skal betale i alt 500 kroner for kurset, hvis du har anden etnisk baggrund end dansk. Se om du er i målgruppen under <?php e(url('/faq')); ?>.</p>
+            <p>SommerCamp er målrettet unge med anden etnisk baggrund end dansk og er støttet af Integrationsministeriet. Det betyder, at du kun skal betale i alt 500 kroner for kurset, hvis du har anden etnisk baggrund end dansk. Se om du er i målgruppen under <a href="<?php e(url('/faq')); ?>">faq</a>.</p>
 
             <p>Brug tre uger på at <strong>udvikle dig</strong>, <strong>forberede dig</strong> og <strong>kvalificere dig</strong>. Til studiet og til livet.</p>
 
