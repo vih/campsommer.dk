@@ -5,7 +5,7 @@
     <taskdef classname="phing.tasks.ext.FtpDeploy" name="ftpdeploy" />
 
     <property name="package-name" value="campsommer" />
-    <property name="version" value="1.0.3" />
+    <property name="version" value="1.0.4" />
     <property name="stability" value="stable" />
     <property name="build.dir" value="./build/" />
     <property name="source.dir" value="./src/" />
