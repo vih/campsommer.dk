@@ -1,8 +1,12 @@
-<h1>Sommercamp – tre fede uger på højskole</h1>
+<h1>Sommercamp - tre uger på højskole</h1>
 
             <p>Her er chancen for at få tre fede uger på højskole, hvor du både får faglige udfordringer, nyt netværk og en masse oplevelser. Sommercamp er en ny måde at være på højskole på. Det er intenst. Det er hårdt arbejde. Men det er først og fremmest sjovt!</p>
 
-            <p>Brug tre uger på at <strong>udvikle dig</strong>, <strong>forberede dig</strong> og <strong>kvalificere dig</strong>. Til studiet og til livet - og hvis du har anden etnisk baggrund end dansk, koster det <strong>kun 500 kroner</strong></p>
+            <h2>Tre uger - 500 kroner!</h2>
+
+            <p>SommerCamp er målrettet unge med anden etnisk baggrund end dansk og er støttet af Integrationsministeriet. Det betyder, at du kun skal betale i alt 500 kroner for kurset, hvis du har anden etnisk baggrund end dansk. Se om du er i målgruppen under <?php e(url('/faq')); ?>.</p>
+
+            <p>Brug tre uger på at <strong>udvikle dig</strong>, <strong>forberede dig</strong> og <strong>kvalificere dig</strong>. Til studiet og til livet.</p>
 
             <h2>Her kan du tage på sommercamp</h2>
 
@@ -12,7 +16,7 @@
                     <li>Dansk</li>
                     <li>Engelsk</li>
                     <li>Matematik</li>
-                    <li>Kommunikation og eksamensforberedelse</li>
+                    <li>Eksamensforberedelse</li>
                     <li>Historie</li>
                     <li>Samfundsfag og religionsmøde</li>
                 </ul>
@@ -34,10 +38,12 @@
             <div class="hojskole" id="vih">
                 <h2><a href="http://www.vih.dk/">Vejle Idrætshøjskole</a></h2>
                 <ul>
-                    <li>Dansk og matematik</li>
-                    <li>Kommunikation og formidling</li>
+                    <li>Dansk</li>
+                    <li>Matematik</li>
+                    <li>Kommunikation</li>
                     <li>Samfundsfag og historie</li>
                     <li>Idræt</li>
+                    <li>Teambuilding</li>
                 </ul>
                 <p><a href="<?php e(url('/vih-sommercamp')); ?>">Læs om Sommercamp Vejle</a></p>
 
