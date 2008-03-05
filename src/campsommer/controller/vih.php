@@ -41,7 +41,7 @@ class Campsommer_Controller_Vih extends k_Controller
 <p>Vejle Idrætshøjskole ligger cirka 4 km fra Vejle Centrum. Der er gode tog- og busforbindelser til Vejle. Højskolen ligger lige midt i skoven. Læs i øvrigt mere på vih.dk.</p>
 
 <h2>Pris</h2>
-<p>6000 kroner for alle tre uger. Er du ung med anden etnisk baggrund end dansk koster kurset kun kr. 500, fordi du er berettiget til støtte fra statens satspulje.</p>
+<p>4.500 kroner for alle tre uger. Er du ung med anden etnisk baggrund end dansk koster kurset kun kr. 500, fordi du er berettiget til støtte fra statens satspulje.</p>
 ';
 
     }

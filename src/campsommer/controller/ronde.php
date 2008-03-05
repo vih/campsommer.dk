@@ -47,7 +47,7 @@ class Campsommer_Controller_Ronde extends k_Controller
 
 <h2>Pris</h2>
 
-<p>Hvis du har en anden etnisk baggrund end dansk, udløser det et stipendium fra regeringens satspulje. Det betyder, at prisen for kurset bliver i alt 500 kroner.</p>
+<p>4.500 kroner for alle tre uger. Hvis du har en anden etnisk baggrund end dansk, udløser det et stipendium fra regeringens satspulje. Det betyder, at prisen for kurset bliver i alt 500 kroner.</p>
 ';
     }
 
