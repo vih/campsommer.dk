@@ -14,7 +14,7 @@ class Campsommer_Controller_Vih extends k_Controller
     function getMainContent()
     {
             return '
-<h1>SommerCamp Vejle, uge 27, 28 og 29, 2008</h1>
+<h1>SommerCamp Vejle</h1>
 <h2>- Tre uforglemmelige uger</h2>
 
 <ul>
