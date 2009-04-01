@@ -22,9 +22,9 @@ class Campsommer_Controller_Root extends k_Dispatcher
                       $this->url('/gfx/images/horisontal-klatrer-logo.jpg'),
                       $this->url('/gfx/images/horisontal-jumping-logo.jpg'));
         $this->document->pic = $pic = $pics[array_rand($pics)];
-        $this->document->title = 'No title';
-        $this->document->keywords = 'none';
-        $this->document->description = 'none';
+        $this->document->title = 'Sommercamp - campsommer.dk';
+        $this->document->keywords = 'sommercamp';
+        $this->document->description = 'sommercamp';
         $this->document->body_attributes = '';
         $this->document->scripts[] = $this->url('/scripts/nifty.js');
     }

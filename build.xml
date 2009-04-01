@@ -35,7 +35,6 @@
             <dirroles key="www">web</dirroles>
 
             <release>
-                <install as="index.php" name="www/index.php" />
             </release>
 
             <dependencies>
