@@ -1,11 +1,10 @@
 <?xml version="1.0" ?>
 <project name="campsommer" basedir="./" default="make">
-    <property file="./build.properties" />
     <taskdef classname="phing.tasks.ext.d51PearPkg2Task" name="d51pearpkg2" />
     <taskdef classname="phing.tasks.ext.FtpDeploy" name="ftpdeploy" />
 
     <property name="package-name" value="campsommer" />
-    <property name="version" value="1.0.4" />
+    <property name="version" value="1.0.5" />
     <property name="stability" value="stable" />
     <property name="build.dir" value="./build/" />
     <property name="source.dir" value="./src/" />
@@ -32,7 +31,7 @@
             <version release="${version}" api="${version}" />
             <stability release="${stability}" api="${stability}" />
 
-            <dirroles key="www">web</dirroles>
+            <dirroles key="campsommer.dk">web</dirroles>
 
             <release>
             </release>
@@ -69,7 +68,7 @@
         <copy todir="${build.dir}${package-name}-${version}">
             <fileset dir="${build.dir}">
                 <include name="**" />
-                <exclude name="config.local.php" />
+                <exclude name="**/config.local.php" />
             </fileset>
         </copy>
         <delete file="${package-name}-${version}.tgz" />
@@ -78,6 +77,7 @@
 
 
     <target name="deploy" depends="make">
+    	<property file="./build.properties" />    	
         <echo msg="Deploying package" />
         <ftpdeploy host="${ftp.server}" username="${ftp.user}" password="${ftp.password}" port="21" dir="./" mode="binary" clearfirst="false">
             <fileset dir="./">
