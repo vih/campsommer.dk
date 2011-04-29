@@ -2,9 +2,9 @@
 
 <p>Her er chancen for at få tre fede uger på højskole, hvor du både får faglige udfordringer, nyt netværk og en masse oplevelser. Sommercamp er en ny måde at være på højskole på. Det er intenst. Det er hårdt arbejde. Men det er først og fremmest sjovt!</p>
 
-<h2>Tre uger - 500 kroner!</h2>
+<h2>Tre uger - 1500 kroner!</h2>
 
-<p>SommerCamp er målrettet unge med anden etnisk baggrund end dansk og er støttet af Integrationsministeriet. Det betyder, at du kun skal betale i alt 500 kroner for kurset, hvis du har anden etnisk baggrund end dansk. Se om du er i målgruppen under <a href="<?php e(url('/faq')); ?>">faq</a>.</p>
+<p>SommerCamp er målrettet unge med anden etnisk baggrund end dansk og er støttet af Integrationsministeriet. Det betyder, at du kun skal betale i alt 1500 kroner for kurset, hvis du har anden etnisk baggrund end dansk. Se om du er i målgruppen under <a href="<?php e(url('/faq')); ?>">faq</a>.</p>
 
 <p>Brug tre uger på at <strong>udvikle dig</strong>, <strong>forberede dig</strong> og <strong>kvalificere dig</strong>. Til studiet og til livet.</p>
 
@@ -53,7 +53,7 @@
 <h2>Hvem er sommercamp for?</h2>
 
 <ul>
-    <li>Alle der er fyldt 17½ i Vejle og Rønde og 16½ i Egaa ved kursets start kan optages</li>
+    <li>Alle der er fyldt 17 1/2 år i Vejle og Rønde og 16 år i Egaa ved kursets start kan optages - den øvre aldersgrænse er 25 år</li>
     <li>Unge der vil forbedre faglige kompetencer især i dansk og matematik.</li>
     <li>Unge der har brug for at kunne formidle, fx ved eksaminer (kommunikation)</li>
     <li>Unge der vil have et overskud i den kommende ungdomsuddannelse</li>

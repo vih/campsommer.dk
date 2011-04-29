@@ -4,25 +4,35 @@
     <taskdef classname="phing.tasks.ext.FtpDeploy" name="ftpdeploy" />
 
     <property name="package-name" value="campsommer" />
-    <property name="version" value="1.1.0" />
+    <property name="version" value="1.1.1" />
     <property name="stability" value="stable" />
-    <property name="build.dir" value="./build/" />
+    <property name="build.dir" value="../build/" />
     <property name="source.dir" value="./src/" />
 
     <target name="export">
-        <echo msg="Exporting SVN files" />
-        <delete dir="${build.dir}" />
-        <exec command="svn export ${source.dir} ${build.dir}" />
+        <echo msg="Cloning GIT repository" />
+        <delete dir="${build.dir}" />        
+        <exec command="git clone git@github.com:vih/campsommer.dk.git ${build.dir}/temp" />
+        <mkdir dir="${build.dir}/package/${package-name}-${version}" />        
     </target>
 
     <target name="build" depends="export">
-        <d51pearpkg2 dir="${build.dir}" baseinstalldir="/">
+        <echo msg="Creating PEAR archive file for ${package-name}" />
+        <copy todir="${build.dir}/package/${package-name}-${version}">
+            <fileset dir="${build.dir}/temp/src">
+                <include name="**" />
+                <exclude name="campsommer.dk/config.local.php" />
+            </fileset>
+        </copy>
+        <delete file="${package-name}-${version}.tgz" />
+    
+        <d51pearpkg2 dir="${build.dir}/package/${package-name}-${version}/" baseinstalldir="/">
             <name>${package-name}</name>
             <summary>Campsommer</summary>
             <channel>public.intraface.dk</channel>
             <description>
                 <!--        Don't exceed this width         -->
-                Sourcecode for the campsommer.dk web site
+                Source code for the campsommer.dk web site
             </description>
 
             <lead user="lsolesen" name="Lars Olesen" email="lars@legestue.net" />
@@ -31,7 +41,7 @@
             <version release="${version}" api="${version}" />
             <stability release="${stability}" api="${stability}" />
 
-            <dirroles key="campsommer.dk">web</dirroles>
+            <dirroles key="campsommer.dk">www</dirroles>
 
             <release>
             </release>
@@ -56,27 +66,18 @@
                 * Fixed dirroles
             </changelog>
 
-            <changelog version="1.0.1" date="2011-04-29" license="LGPL">
+            <changelog version="1.1.1" date="2011-04-29" license="LGPL">
                 * Fixed links and updated brochure
             </changelog>
 
             <notes>
-                * Minor bugfixes
+                * Fixed minor bugs
             </notes>
         </d51pearpkg2>
     </target>
 
     <target name="make" depends="build">
-        <echo msg="Creating PEAR archive file for ${package-name}" />
-        <mkdir dir="${build.dir}${package-name}-${version}" />
-        <copy todir="${build.dir}${package-name}-${version}">
-            <fileset dir="${build.dir}">
-                <include name="**" />
-                <exclude name="**/config.local.php" />
-            </fileset>
-        </copy>
-        <delete file="${package-name}-${version}.tgz" />
-        <tar compression="gzip" destfile="${package-name}-${version}.tgz" basedir="${build.dir}" />
+        <tar compression="gzip" destfile="${package-name}-${version}.tgz" basedir="${build.dir}/package" />
     </target>
 
 

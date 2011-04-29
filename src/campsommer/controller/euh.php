@@ -23,7 +23,7 @@ class Campsommer_Controller_Euh extends k_Controller
             <p>I de tre uger du er på højskolen lever og bor du sammen med en gruppe jævnaldrende unge. Planen er, at du får en lang række nye venner fra hele landet.</p>
             <p>Det bliver en sommerferie du aldrig glemmer og så er du helt sikkert helt klar til det efterfølgende.</p>
             <h2>Pris</h2>
-            <p>4.500 kr for 3 uger. Hvis du er ung med anden etnisk baggrund end dansk udløser du et tilskud der gør, at du selv kun skal betale 500 kr for hele kurset.</p>';
+            <p>4.500 kr for 3 uger. Hvis du er ung med anden etnisk baggrund end dansk udløser du et tilskud der gør, at du selv kun skal betale 1500 kr for hele kurset.</p>';
     }
 
     function getSubContent()
