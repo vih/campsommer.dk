@@ -44,6 +44,16 @@
             <dirroles key="campsommer.dk">www</dirroles>
 
             <release>
+                <install as="index.php" name="campsommer.dk/index.php" />
+                <install as="scripts/nifty.js" name="campsommer.dk/scripts/nifty.js" />
+                <install as="scripts/niftyCorners.css" name="campsommer.dk/scripts/niftyCorners.css" />                                                
+                <install as="gfx/images/horisontal-boldspil-logo.jpg" name="campsommer.dk/gfx/images/horisontal-boldspil-logo.jpg" />
+                <install as="gfx/images/horisontal-studiegruppe-logo.jpg" name="campsommer.dk/gfx/images/horisontal-studiegruppe-logo.jpg" />
+                <install as="gfx/images/horisontal-klatrer-logo.jpg" name="campsommer.dk/gfx/images/horisontal-klatrer-logo.jpg" />
+                <install as="gfx/images/horisontal-jumping-logo.jpg" name="campsommer.dk/gfx/images/horisontal-jumping-logo.jpg" />
+                <install as="gfx/images/logo.jpg" name="campsommer.dk/gfx/images/logo.jpg" />
+                <install as="gfx/images/hojskolerne-logo.jpg" name="campsommer.dk/gfx/images/hojskolerne-logo.jpg" />                
+                <install as="gfx/pdf/sommercamp2011.pdf" name="campsommer.dk/gfx/pdf/sommercamp2011.pdf" />                
             </release>
 
             <dependencies>
