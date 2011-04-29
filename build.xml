@@ -4,7 +4,7 @@
     <taskdef classname="phing.tasks.ext.FtpDeploy" name="ftpdeploy" />
 
     <property name="package-name" value="campsommer" />
-    <property name="version" value="1.0.5" />
+    <property name="version" value="1.1.0" />
     <property name="stability" value="stable" />
     <property name="build.dir" value="./build/" />
     <property name="source.dir" value="./src/" />
@@ -22,7 +22,7 @@
             <channel>public.intraface.dk</channel>
             <description>
                 <!--        Don't exceed this width         -->
-                Campsommer
+                Sourcecode for the campsommer.dk web site
             </description>
 
             <lead user="lsolesen" name="Lars Olesen" email="lars@legestue.net" />
@@ -56,8 +56,12 @@
                 * Fixed dirroles
             </changelog>
 
+            <changelog version="1.0.1" date="2011-04-29" license="LGPL">
+                * Fixed links and updated brochure
+            </changelog>
+
             <notes>
-                * Fixed price to VIH
+                * Minor bugfixes
             </notes>
         </d51pearpkg2>
     </target>
