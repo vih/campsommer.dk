@@ -45,6 +45,7 @@
 
             <release>
                 <install as="index.php" name="campsommer.dk/index.php" />
+                <install as="config.local.example.php" name="campsommer.dk/config.local.example.php" />                
                 <install as="scripts/nifty.js" name="campsommer.dk/scripts/nifty.js" />
                 <install as="scripts/niftyCorners.css" name="campsommer.dk/scripts/niftyCorners.css" />                                                
                 <install as="gfx/images/horisontal-boldspil-logo.jpg" name="campsommer.dk/gfx/images/horisontal-boldspil-logo.jpg" />
