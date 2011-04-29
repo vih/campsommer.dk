@@ -22,7 +22,6 @@ class Campsommer_Controller_Ronde extends k_Controller
 
 <p>- Men vi har også plads til dig, hvis du bare ønsker at klare dig lidt bedre der, hvor du er - samtidig med, at du får tre skønne uger med masser af højskoleliv, fællesskab og oplevelser.</p>
 
-
 <p><strong>Dansk</strong>. Undervisning, som tager afsæt i dit niveau og behov.</p>
 
 <p><strong>Engelsk</strong>. Bliv trænet i engelsk, både som talesprog og som redskab til studiet.</p>
@@ -31,9 +30,7 @@ class Campsommer_Controller_Ronde extends k_Controller
 
 <p><strong>Kommunikation - eksamensforberedelse</strong>. Få bugt med eksamensskrækken og grib muligheden for at lave en bedre præstation, når du skal til mundtlig eksamen. En psykolog hjælper dig med helt konkrete teknikker.</p>
 
-
 <p><strong>Historie</strong>. Hvis du tror, at historie er kedeligt, så vil du blive klogere efter tre uger på SommerCamp! Her vil vores dygtige historiker lære dig, hvorfor Danmarkshistorien er vigtig, væsentlig og ikke mindst sjov at studere.</p>
-
 
 <p><strong>Samfundsfag og religionsmøde</strong>. Bliv klogere på det samfund, du lever i. Hvorfor er tingene som de er? Hvad er demokrati i Danmark, og hvordan bruger du din indflydelse? Undervisning og masser af diskussion.</p>
 
@@ -53,6 +50,6 @@ class Campsommer_Controller_Ronde extends k_Controller
 
     function getSubContent()
     {
-        return '<h2>Læs mere</h2><p><a href="http://www.rhe.dk/hojskole/">www.rhe.dk</a></p>';
+        return '<h2>Læs mere</h2><p><a href="http://www.rondehojskole.dk">www.rondehojskole.dk</a></p>';
     }
 }

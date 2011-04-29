@@ -11,7 +11,7 @@
 <h2>Her kan du tage på sommercamp</h2>
 
 <div class="hojskole" id="ronde">
-    <h2><a href="http://www.rhe.dk/hojskole/">Rønde Højskole</a></h2>
+    <h2><a href="http://www.rondehojskole.dk">Rønde Højskole</a></h2>
     <ul>
         <li>Dansk</li>
         <li>Engelsk</li>
@@ -36,7 +36,7 @@
 </div>
 
 <div class="hojskole" id="vih">
-    <h2><a href="http://www.vih.dk/">Vejle Idrætshøjskole</a></h2>
+    <h2><a href="http://vih.dk/">Vejle Idrætshøjskole</a></h2>
     <ul>
         <li>Dansk</li>
         <li>Matematik</li>

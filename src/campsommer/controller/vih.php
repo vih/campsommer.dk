@@ -48,6 +48,6 @@ class Campsommer_Controller_Vih extends k_Controller
 
     function getSubContent()
     {
-        return '<h2>Læs mere</h2><p><a href="http://www.vih.dk/kortekurser/219/">Sommercamp Vejle</a></p>';
+        return '<h2>Læs mere</h2><p><a href="http://tilmelding.vih.dk/kortekurser/315">Sommercamp Vejle</a></p>';
     }
 }
