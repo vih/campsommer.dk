@@ -66,4 +66,4 @@
 
 <h2>Brochure</h2>
 
-<p><a href="<?php e(url('/gfx/pdf/sommercamp-brochure-2009.pdf')); ?>">Download brochure</a></p>
+<p><a href="<?php e(url('/gfx/pdf/sommercamp2011.pdf')); ?>">Download brochure</a></p>
