@@ -2,7 +2,7 @@
 <html xml:lang="da" xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}" />
     <meta name="keywords" content="{{ page.keywords }}" />
@@ -58,7 +58,7 @@
       }
 
       div#navigation-main {
-        background: url(/images/horisontal-boldspil-logo.jpg);
+        background: url(images/horisontal-{{ page.picture }}-logo.jpg);
         height: 200px;
       }
 
@@ -229,7 +229,7 @@
       <div id="branding">
 
         <div id="branding-logo">
-            <a href="/"><img src="/images/logo.jpg" /></a>
+            <a href="/"><img src="images/logo.jpg" /></a>
         </div>
         <h1><a href="/"><span>SommerCamp</span></a></h1>
        </div>
@@ -247,7 +247,7 @@
         {{ content }}
 
       <div id="footer">
-        <a href="http://www.hojskolerne.dk/"><img alt="hojskolerne.dk" src="/images/hojskolerne-logo.jpg" height="30" width="100" /></a>
+        <a href="http://www.hojskolerne.dk/"><img alt="hojskolerne.dk" src="images/hojskolerne-logo.jpg" height="30" width="100" /></a>
       </div>
 
     </div>
